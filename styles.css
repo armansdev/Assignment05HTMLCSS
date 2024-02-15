@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #111827;
+    color: white;
+}
+img:hover{
+    cursor: pointer;
+}
+
+/* Header Section */
+nav{
+    margin: 20px;
+}
+nav ul{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+}
+nav ul li{
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.homeOption{
+    padding: 5px 10px;
+    background: rgb(100, 100, 224);
+    border-radius: 20px;
+}
+
+.hambrger{
+    width: 20px;
+    display: none;
+}
+
+.intro{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.introLine1{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 28px;
+}
+.introLine1 img{
+    height: 45px;
+}
+.introLine2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 35px;
+    color: rgb(197, 197, 89);
+}
+img[alt="pc-image"]{
+    width: 30vw;
+}
+
+/* Main Section */
+.projects{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projects div h1{
+    font-size: 40px;
+}
+
+.horizontalDivider{
+    height: 10px;
+    background-color: blue;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.projectList{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 20px; 
+}
+
+img[alt="project-image"]{
+    width: 20vw;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer Section */
+.contact{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.contact div h1{
+    font-size: 40px;
+}
+.horizontalDividerContact{
+    height: 10px;
+    background-color: blue;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.socials{
+    display: flex;
+    gap: 15px;  
+}
+.socials img{
+    width: 30px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 576px) {
+    nav ul{
+        display: none;
+    }
+    .hambrger{
+        display: block;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column;
+    }
+    img[alt="pc-image"]{
+        width: 60vw;
+    }
+    .introLine1{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 20px;
+    }
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    h2{
+        font-size: 25px;
+        text-align: center;
+    }
+    .projectList{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        column-gap: 20px; 
+    }
+    .projects div h1{
+        font-size: 35px;
+    }
+    img[alt="project-image"]{
+        width: 50vw;
+    }
+    .contact div h1{
+        font-size: 35px;
+    }
+}
